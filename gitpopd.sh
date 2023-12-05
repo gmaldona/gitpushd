@@ -15,7 +15,12 @@
 # so pushed branches are mixed with each other.
 
 gitroot=$(git worktree list | cut -d ' ' -f 1)
-[ -n $gitroot ] && project=$(echo $gitroot | xargs basename) || exit 1
+
+if [ -n $gitroot ]; then 
+   exit 1
+fi 
+
+project=$(echo $gitroot | xargs basename)
 
 target="$HOME/.gitpushd/$project"
 branch=$(git rev-parse --abbrev-ref HEAD)
