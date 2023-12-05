@@ -28,5 +28,5 @@ To use as a regular bash function, the script must be symlinked inside of `/usr/
 
 ```bash
 # never run a bash script you do not know what it is doing...
-$ sudo cp gitpopd.sh /usr/local/bin/gitpopd && sudo cp gitpushd.sh /usr/local/bin/gitpushd
+$ sudo ln -s $(realpath gitpushd.sh) /usr/local/bin/gitpushd && sudo ln -s $(realpath gitpopd.sh) /usr/local/bin/gitpopd
 ```
