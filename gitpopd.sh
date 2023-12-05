@@ -37,4 +37,4 @@ sed -i '' -e '$ d' .gitpushd # pop top of the branch stack
 popd >/dev/null
 
 git checkout $branch
-echo $(git rev-parse --abbrev-ref HEAD)
+echo $branch
