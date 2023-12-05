@@ -1,5 +1,9 @@
 # gitpushd && gitpopd
 
+## Problem:
+Constant switching feature branches at work; sometimes forgetting the branch name and having to go to
+my MR stack on GitLab to figure out the branch I was just working on... bad memory... annoying.
+
 ## gitpushd
 
 Similar to GNU pushd where a user can pushd a directory
