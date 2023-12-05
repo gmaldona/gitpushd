@@ -1,6 +1,6 @@
 # gitpushd && gitpopd
 
-## Problem:
+## Problem
 Constant switching feature branches at work; sometimes forgetting the branch name and having to go to
 my MR stack on GitLab to figure out the branch I was just working on... bad memory... annoying.
 
